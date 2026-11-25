@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>NoteSpace - Web-Based Note-Taking</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo"><span>Note</span>Space</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#notes">My Notes</a></li>
+      <li><a href="#login" class="nav-btn">Login</a></li>
+    </ul>
+  </nav>
+
+<div class="page" id="home">
+<header class="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <h1>Write it down.<br>Share it easily.</h1>
+        <p>NoteSpace is a simple web workspace to create, organize and share your notes with friends and teammates.</p>
+        <a href="#login" class="btn">Get Started</a>
+      </div>
+      <div class="hero-preview">
+        <div class="preview-note">
+          <h3>Sprint Planning</h3>
+          <ul>
+            <li>Finish login page</li>
+            <li>Design notes folders</li>
+            <li>Demo on Friday</li>
+          </ul>
+          <small>Shared with 2 people</small>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="section">
+    <h2>Everything you need</h2>
+    <p class="lead">Simple tools that make note-taking and teamwork smooth.</p>
+    <div class="cards">
+      <div class="card">
+        <div class="icon">✏️</div>
+        <h3>Easy Writing</h3>
+        <p>Create, open, edit and save your notes in one clean place.</p>
+      </div>
+      <div class="card">
+        <div class="icon">📁</div>
+        <h3>Folders</h3>
+        <p>Keep notes organized in folders like Work, Personal and Study.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🤝</div>
+        <h3>Collaboration</h3>
+        <p>Share notes and decide who can edit and who can only view.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🔍</div>
+        <h3>Search</h3>
+        <p>Find any note quickly using its title or tag.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🕘</div>
+        <h3>Version History</h3>
+        <p>Go back to older versions so nothing is ever lost.</p>
+      </div>
+      <div class="card">
+        <div class="icon">📱</div>
+        <h3>Works Everywhere</h3>
+        <p>The layout adjusts to mobile, tablet and laptop screens.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section white">
+    <h2>CSE subjects</h2>
+    <p class="lead">Keep separate notes for every first-year B.Tech CSE subject.</p>
+    <div class="cards">
+      <div class="card">
+        <div class="icon">💻</div>
+        <h3>Programming in C</h3>
+        <p>Loops, arrays, pointers and functions.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🐍</div>
+        <h3>Python</h3>
+        <p>Lists, dictionaries and OOP basics.</p>
+      </div>
+      <div class="card">
+        <div class="icon">📐</div>
+        <h3>Mathematics</h3>
+        <p>Matrices, calculus and equations.</p>
+      </div>
+      <div class="card">
+        <div class="icon">⚛️</div>
+        <h3>Physics</h3>
+        <p>Optics, lasers and semiconductors.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🔌</div>
+        <h3>Digital Logic</h3>
+        <p>Gates, Boolean algebra and K-maps.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🗣️</div>
+        <h3>Communication</h3>
+        <p>Writing, speaking and presentations.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>How it works</h2>
+    <p class="lead">Three easy steps to get started.</p>
+    <div class="steps">
+      <div class="step"><b>1</b><h3>Sign up</h3><p>Create your free account.</p></div>
+      <div class="step"><b>2</b><h3>Write notes</h3><p>Add notes inside your folders.</p></div>
+      <div class="step"><b>3</b><h3>Share</h3><p>Invite others to work together.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <form class="form-box" action="#">
+      <h2>Contact Us</h2>
+      <p class="sub">Have a question? Send us a message.</p>
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Your name" required minlength="2">
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="you@example.com" required>
+      <label for="msg">Message</label>
+      <textarea id="msg" rows="4" placeholder="Write your message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+</div>
+
+<div class="page" id="login">
+<form class="form-box" action="#notes">
+    <h2>Welcome back</h2>
+    <p class="sub">Login to open your notes.</p>
+    <label for="email">Email</label>
+    <input type="email" id="email" placeholder="you@example.com" required>
+    <label for="pass">Password</label>
+    <input type="password" id="pass" placeholder="At least 8 characters" required minlength="8">
+    <button type="submit" class="btn">Login</button>
+    <p>New user? <a href="#signup">Create an account</a></p>
+  </form>
+
+  <form class="form-box" action="#notes" id="signup">
+    <h2>Create account</h2>
+    <p class="sub">Start writing in under a minute.</p>
+    <label for="sname">Full Name</label>
+    <input type="text" id="sname" placeholder="Your full name" required minlength="2">
+    <label for="semail">Email</label>
+    <input type="email" id="semail" placeholder="you@example.com" required>
+    <label for="spass">Password</label>
+    <input type="password" id="spass" placeholder="At least 8 characters" required minlength="8">
+    <button type="submit" class="btn">Sign Up</button>
+  </form>
+</div>
+
+<div class="page" id="notes">
+<main class="notes-page">
+    <h1>My Notes</h1>
+    <p class="intro">Subject: CSE (Computer Science and Engineering). Click inside any note and start typing.</p>
+
+    <input class="search" type="search" placeholder="Search notes by title or tag...">
+
+    <section class="folder">
+      <h2>Work</h2>
+      <div class="notes-grid">
+        <div class="note yellow">
+          <h3>Sprint Planning</h3>
+          <textarea>Goal: finish login and notes page. Demo on Friday.</textarea>
+          <span class="tag">meeting</span>
+          <small>Shared with 2 people | Version 3</small>
+        </div>
+        <div class="note pink">
+          <h3>Project Ideas</h3>
+          <textarea>1. Note app
+2. Weather app
+3. Quiz website</textarea>
+          <span class="tag">ideas</span>
+          <small>Private | Version 1</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="folder">
+      <h2>CSE Subjects</h2>
+      <div class="notes-grid">
+        <div class="note yellow">
+          <h3>Programming in C</h3>
+          <textarea>Variables, data types, loops, functions, arrays, pointers, structures, file handling.</textarea>
+          <span class="tag">c-language</span>
+          <small>Private | Version 1</small>
+        </div>
+        <div class="note pink">
+          <h3>Python Programming</h3>
+          <textarea>Lists, tuples, dictionaries, functions, OOP basics, file handling.</textarea>
+          <span class="tag">python</span>
+          <small>Private | Version 1</small>
+        </div>
+        <div class="note blue">
+          <h3>Engineering Mathematics</h3>
+          <textarea>Matrices, differentiation, integration, differential equations.</textarea>
+          <span class="tag">maths</span>
+          <small>Private | Version 1</small>
+        </div>
+        <div class="note green">
+          <h3>Engineering Physics</h3>
+          <textarea>Optics, lasers, waves, quantum basics, semiconductors.</textarea>
+          <span class="tag">physics</span>
+          <small>Private | Version 1</small>
+        </div>
+        <div class="note yellow">
+          <h3>Digital Logic</h3>
+          <textarea>Number systems, logic gates, Boolean algebra, K-map, flip-flops.</textarea>
+          <span class="tag">electronics</span>
+          <small>Private | Version 1</small>
+        </div>
+        <div class="note pink">
+          <h3>Communication Skills</h3>
+          <textarea>Grammar, email writing, presentations, group discussion.</textarea>
+          <span class="tag">english</span>
+          <small>Private | Version 1</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="folder">
+      <h2>Personal</h2>
+      <div class="notes-grid">
+        <div class="note yellow">
+          <h3>Weekend To-Do</h3>
+          <textarea>Laundry, call home, buy groceries.</textarea>
+          <span class="tag">todo</span>
+          <small>Private | Version 1</small>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+
+  <footer class="footer">
+    <p>&copy; 2026 NoteSpace | Subject: CSE | B.Tech Project</p>
+  </footer>
+</body>
+</html>
